@@ -1,5 +1,5 @@
 var state = {
-  balance: 100
+  balance: 250
 };
 
 var inquirer = require("inquirer");
