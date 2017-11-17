@@ -40,7 +40,8 @@ function withdraw() {
   ];
   inquirer.prompt(questions).then(answers => {
     state.balance = state.balance - answers.amount;
-    balance();
+    console.log(state.balance);
+    goodBy();
   });
 }
 
@@ -62,4 +63,9 @@ function deposit() {
 function balance() {
   console.log(state.balance);
   askUser();
+}
+
+function goodBy() {
+  console.log("thank you for using SheNomads bank, good-bye");
+  process.exit();
 }
